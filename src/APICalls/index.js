@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const axiosInstance = axios.create({
-    baseURL: 'youseai-backend-production.up.railway.app',
+    baseURL: 'http://localhost:8081',
     headers: {
         'Content-Type' : 'application/json',
         'authorization': `Bearer ${localStorage.getItem('token')}`
